@@ -1,0 +1,139 @@
+{
+    "estados": [
+        {
+            "nome": "Acre",
+            "sigla": "AC",
+            "fronteiras": ["AM", "RO"]
+        },
+        {
+            "nome": "Alagoas",
+            "sigla": "AL",
+            "fronteiras": ["BA", "PE", "SE"]
+        },
+        {
+            "nome": "Amapá",
+            "sigla": "AP",
+            "fronteiras": ["PA"]
+        },
+        {
+            "nome": "Amazonas",
+            "sigla": "AM",
+            "fronteiras": ["AC", "MT", "PA", "RO", "RR"]
+        },
+        {
+            "nome": "Bahia",
+            "sigla": "BA",
+            "fronteiras": ["AL", "ES", "GO", "MG", "PE", "PI", "SE", "TO"]
+        },
+        {
+            "nome": "Ceará",
+            "sigla": "CE",
+            "fronteiras": ["PB", "PE", "PI", "RN"]
+        },
+        {
+            "nome": "Distrito Federal",
+            "sigla": "DF",
+            "fronteiras": ["GO", "MG"]
+        },
+        {
+            "nome": "Espírito Santo",
+            "sigla": "ES",
+            "fronteiras": ["BA", "MG", "RJ"]
+        },
+        {
+            "nome": "Goiás",
+            "sigla": "GO",
+            "fronteiras": ["BA", "DF", "MG", "MT", "MS", "TO"]
+        },
+        {
+            "nome": "Maranhão",
+            "sigla": "MA",
+            "fronteiras": ["PA", "PI", "TO"]
+        },
+        {
+            "nome": "Mato Grosso",
+            "sigla": "MT",
+            "fronteiras": ["AM", "GO", "MS", "PA", "RO", "TO"]
+        },
+        {
+            "nome": "Mato Grosso do Sul",
+            "sigla": "MS",
+            "fronteiras": ["GO", "MT", "MG", "PR", "SP"]
+        },
+        {
+            "nome": "Minas Gerais",
+            "sigla": "MG",
+            "fronteiras": ["BA", "DF", "ES", "GO", "MS", "RJ", "SP"]
+        },
+        {
+            "nome": "Pará",
+            "sigla": "PA",
+            "fronteiras": ["AM", "AP", "MA", "MT", "TO", "RR"]
+        },
+        {
+            "nome": "Paraíba",
+            "sigla": "PB",
+            "fronteiras": ["CE", "PE", "RN"]
+        },
+        {
+            "nome": "Paraná",
+            "sigla": "PR",
+            "fronteiras": ["MS", "SP", "SC"]
+        },
+        {
+            "nome": "Pernambuco",
+            "sigla": "PE",
+            "fronteiras": ["AL", "BA", "CE", "PB", "PI"]
+        },
+        {
+            "nome": "Piauí",
+            "sigla": "PI",
+            "fronteiras": ["BA", "CE", "MA", "PE", "TO"]
+        },
+        {
+            "nome": "Rio de Janeiro",
+            "sigla": "RJ",
+            "fronteiras": ["ES", "MG", "SP"]
+        },
+        {
+            "nome": "Rio Grande do Norte",
+            "sigla": "RN",
+            "fronteiras": ["CE", "PB"]
+        },
+        {
+            "nome": "Rio Grande do Sul",
+            "sigla": "RS",
+            "fronteiras": ["SC"]
+        },
+        {
+            "nome": "Rondônia",
+            "sigla": "RO",
+            "fronteiras": ["AC", "AM", "MT"]
+        },
+        {
+            "nome": "Roraima",
+            "sigla": "RR",
+            "fronteiras": ["AM", "PA"]
+        },
+        {
+            "nome": "Santa Catarina",
+            "sigla": "SC",
+            "fronteiras": ["PR", "RS"]
+        },
+        {
+            "nome": "São Paulo",
+            "sigla": "SP",
+            "fronteiras": ["MG", "PR", "RJ", "MS"]
+        },
+        {
+            "nome": "Sergipe",
+            "sigla": "SE",
+            "fronteiras": ["AL", "BA"]
+        },
+        {
+            "nome": "Tocantins",
+            "sigla": "TO",
+            "fronteiras": ["BA", "GO", "MA", "MT", "PI", "PA"]
+        }
+    ]
+}
