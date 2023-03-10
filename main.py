@@ -21,41 +21,52 @@ for estado in estados:
 #print(fronteiras)
 
 size_estados = len(siglas)
-grafo = [[0 for j in range(size_estados)] for i in range(size_estados)]
-
 
 # Criação da Matriz
-for i in range(size_estados):
-    for j in range(size_estados):
-        if siglas[i] in fronteiras[siglas[j]]:
-            grafo[i][j] = 1
+
+def criaGrafo(nos, vertices):
+    sizeNos = len(nos)
+    grafo = [[0 for j in range(sizeNos)] for i in range(sizeNos)]
+    for i in range(sizeNos):
+        for j in range(sizeNos):
+            if nos[i] in vertices[nos[j]]:
+                grafo[i][j] = 1
+    return grafo
+
+grafo = criaGrafo(siglas, fronteiras)
 
 # Print da matriz no console
-est = "   "
-for i in siglas:
-    est += i + " "
 
-print(est)
-i = 0
-for i, linha in enumerate(grafo):
-    print(siglas[i], linha)
+def printGrafoConsole(grafo):
+    est = "   "
+    for i in siglas:
+        est += i + " "
 
+    print(est)
+    for i, linha in enumerate(grafo):
+        print(siglas[i], linha)
+printGrafoConsole(grafo)
 
 # Cria Plot do grafo como matriz
-fig, ax = plt.subplots()
-im = ax.imshow(grafo)
 
-ax.set_xticks(np.arange(len(siglas)), labels=siglas, rotation="vertical")
-ax.set_yticks(np.arange(len(siglas)), labels=siglas)
+def printGrafo(grafo, lableX):
+    fig, ax = plt.subplots()
+    im = ax.imshow(grafo)
 
-for i in range(len(siglas)):
-    for j in range(len(siglas)):
-        text = ax.text(i, j, grafo[i][j],
-                       ha="center", va="center", color="w")
+    ax.set_xticks(np.arange(len(grafo[0])), labels=lableX, rotation="vertical")
+    ax.set_yticks(np.arange(len(grafo[0])), labels=lableX)
 
-ax.set_title("Grafo")
-fig.tight_layout()
-plt.show()
+    for i in range(len(grafo[0])):
+        for j in range(len(grafo[0])):
+            text = ax.text(i, j, grafo[i][j],
+                           ha="center", va="center", color="w")
+
+    ax.set_title("Grafo")
+    fig.tight_layout()
+    plt.show()
+
+printGrafo(grafo, siglas)
+
 
 
 # Cria Plot das frequencias dos estados
@@ -100,8 +111,11 @@ plt.show()
 
 # Print Max e Min
 print("Graus Máximo = ", grau_Max, " fronteiras = ", max_f)
+for f in grau_Max:
+    print(f, ": ", fronteiras[f])
 print("Graus Mínimo = ", grau_Min, " fronteiras = ", min_f)
-
+for f in grau_Min:
+    print(f, ": ", fronteiras[f])
 
 # Grafico Qnt de fronteiras x Estado
 plt.bar([x for x in range(size_estados)],
